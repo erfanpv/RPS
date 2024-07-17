@@ -1,87 +1,126 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(25, 25, 107);
-  color: rgb(255, 255, 255);
-}
-.title {
-  font-size: 30px;
-  font-weight: bold;
-  margin-top: 30px;
-}
-.first-div {
-  vertical-align: middle;
-  text-align: center;
-  padding-top: 130px;
-}
-.second-div {
-  background-color: rgb(34, 34, 112);
-  margin-left: 500px;
-  margin-right: 500px;
-  border: none;
-  border-radius: 25px;
-  box-shadow: 1px 1px 5px rgb(0, 0, 0);
-  padding-top: 30px;
-  padding-bottom: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+  color: #333;
+  margin: 0;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  vertical-align: middle;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.game-wrapper {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.title {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ff6b6b;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.move-button {
+  background-color: rgba(0, 123, 255, 0.1);
+  border: none;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .move-icon {
   height: 50px;
 }
-.move-button {
-  background-color: rgb(17, 17, 85);
-  border: none;
-  width: 120px;
-  height: 120px;
-  border-radius: 60px;
-  margin-right: 10px;
-  cursor: pointer;
-  box-shadow: 1px 1px 5px rgb(0, 0, 0);
-}
-.result {
-  font-size: 25px;
-  font-weight: bold;
-  text-align: center;
-  align-items: center;
-}
-.confirmation,
-.moves {
-  font-weight: bold;
-  align-items: center;
-  text-align: center;
-}
-.score {
-  margin-top: 30px;
-  font-weight: bold;
-}
-.reset-score-button,
-.auto-play-button,
-.reset-confirm-button {
-  background-color: rgb(17, 17, 85);
-  color: white;
-  border: none;
-  border-radius: 50px;
-  font-size: 15px;
-  padding: 8px 15px;
-  cursor: pointer;
-  font-weight: bold;
-  box-shadow: 1px 1px 5px rgb(0, 0, 0);
-}
-.reset-score-button:hover,
-.auto-play-button:hover,
-.reset-confirm-button:hover,
+
 .move-button:hover {
-  background-color: rgb(25, 25, 128);
-  transition: 0.2s;
-}
-.reset-score-button:active,
-.auto-play-button:active,
-.reset-confirm-button:active,
-.move-button:active {
-  background-color: rgb(7, 7, 49);
+  background-color: rgba(0, 123, 255, 0.3);
+  transform: scale(1.1);
 }
 
-.reset-confirm-button {
-  margin-left: 10px;
+.results {
+  margin-bottom: 20px;
+}
+
+.result {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ff6b6b;
+}
+
+.moves,
+.score {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-around;
+}
+
+.reset-score-button,
+.auto-play-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.reset-score-button:hover,
+.auto-play-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+.confirmation {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #ff6b6b;
+}
+
+.confirmation button {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.confirmation button:hover {
+  background-color: #ff4b4b;
+  transform: scale(1.1);
 }
